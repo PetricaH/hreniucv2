@@ -225,7 +225,7 @@ main {
     border: none;
     padding: 20px;
     border-radius: 5px;
-    color: #1e1e1e;
+    color: #f2f2f2;
     background-color: red;
     font-family: "Readex Pro", sans-serif;
     font-size: 15px;
@@ -425,7 +425,7 @@ main {
     font-family: "Readex Pro", sans-serif;
     font-weight: 400;
     background-color: red;
-    color: #1e1e1e;
+    color: #f2f2f2;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -509,6 +509,7 @@ main {
 
 #to-top-btn {
     background-color: red;
+    color: #f2f2f2;
     outline: none;
     border: none;
     border-radius: 5px;
