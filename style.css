@@ -509,6 +509,7 @@ main {
 
 .second-part-footer a {
     margin-top: 50px;
+    cursor: pointer;
 }
 
 #to-top-btn {
@@ -519,7 +520,6 @@ main {
     border-radius: 5px;
     padding: 20px;
     font-family: "Readex Pro", sans-serif;
-    cursor: pointer;
 }
 
 #to-top-btn:active
