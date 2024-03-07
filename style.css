@@ -516,9 +516,10 @@ main {
     padding: 20px;
     font-family: "Readex Pro", sans-serif;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 #to-top-btn:active
-#form-btn {
+#form-btn:active {
     background-color: #f2f2f2;
 }
