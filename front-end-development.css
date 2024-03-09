@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Readex Pro", sans-serif;
+    background-color: #f2f2f2;
+}
+
+::selection { /* Code for Firefox */
+    background: red;
+    color: #f2f2f2;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#top-of-website {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    width: 100px;
+}
+
+main {
+    width: 90%;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 75px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*hero-section*/
+
+#hero-section {
+    z-index: 999;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 400;
+    position: relative;
+}
+
+.navigation-menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width .3s ease-in-out;
+}
+
+.navigation-menu a:hover::before {
+    width: 100%;
+}
+
+.navigation-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1e1e1e;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.navigation-menu:not(:hover)::after{
+    opacity: 1;
+}
+
+#project-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-container {
+    position: relative; 
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.project-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: relative;
+    transition: .3s ease;
+}
+
+.project-container:hover img {
+    transform: scale(1.05);
+}
+
+.project-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.1));
+    border-radius: 20px 20px 0 0;
+}
+
+.project-name {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: #f2f2f2;
+    font-weight: 400;
+    padding: 0 10px;
+    text-align: left; 
+    text-transform: uppercase;
+    border-left: 1px solid red;  
+    font-size: 1.85rem;
+    z-index: 9;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: calc(50% - 5px);
+    color: #f2f2f2;
+    font-weight: 300;
+    border-left: 1px solid red;  
+    padding: 0 10px;
+    text-align: left; 
+    z-index: 9;
+    font-size: .85rem;
+}
+
+.view-project-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    width: fit-content;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    color: #1e1e1e;
+    background-color: red;
+    font-family: "Readex Pro", sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.view-project-btn:hover {
+    color: #f2f2f2;
+}
+
+.view-project-btn:active {
+    background-color: #1e1e1e;
+}
