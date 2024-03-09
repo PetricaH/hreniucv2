@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Readex Pro", sans-serif;
+    background-color: #f2f2f2;
+}
+
+::selection { /* Code for Firefox */
+    background: red;
+    color: #f2f2f2;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#top-of-website {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    width: 100px;
+}
+
+main {
+    width: 90%;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 75px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*hero-section*/
+
+#hero-section {
+    height: 90vh;
+    z-index: 999;
+    display: grid; 
+    align-items: center;
+    grid-auto-columns: 1fr; 
+    grid-template-rows: 0.6fr 1.8fr 0.6fr; 
+    gap: 0px 0px; 
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 400;
+    position: relative;
+}
+
+.navigation-menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width .3s ease-in-out;
+}
+
+.navigation-menu a:hover::before {
+    width: 100%;
+}
+
+.navigation-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1e1e1e;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.navigation-menu:not(:hover)::after{
+    opacity: 1;
+}

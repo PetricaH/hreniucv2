@@ -130,7 +130,7 @@ main {
 .lets-work-btn {
     border: none;
     background-color: red;
-    color: #f2f2f2;
+    color: #1e1e1e;
     font-family: "Readex Pro", sans-serif;
     font-size: 15px;
     padding: 20px;
@@ -225,7 +225,7 @@ main {
     border: none;
     padding: 20px;
     border-radius: 5px;
-    color: #f2f2f2;
+    color: #1e1e1e;
     background-color: red;
     font-family: "Readex Pro", sans-serif;
     font-size: 15px;
@@ -277,7 +277,7 @@ main {
     text-transform: uppercase;
     position: absolute;
     top: 50%;
-    left: -8%;
+    left: -10%;
     color: red;
     transform: translate(-50%, -50%);
     word-break: break-all;
@@ -425,7 +425,7 @@ main {
     font-family: "Readex Pro", sans-serif;
     font-weight: 400;
     background-color: red;
-    color: #f2f2f2;
+    color: #1e1e1e;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -513,13 +513,19 @@ main {
 
 #to-top-btn {
     background-color: red;
-    color: #f2f2f2;
     outline: none;
     border: none;
     border-radius: 5px;
     padding: 20px;
     font-family: "Readex Pro", sans-serif;
     cursor: pointer;
+}
+
+#to-top-btn:hover,
+.form-btn:hover,
+.see-more-work-btn:hover,
+.lets-work-btn:hover {
+    color: white;
 }
 
 #to-top-btn:active
