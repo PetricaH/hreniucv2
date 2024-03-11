@@ -204,3 +204,81 @@ p {
 .view-project-btn:active {
     background-color: #1e1e1e;
 }
+
+/*footer part*/
+
+.footer-container {
+    width: 100%;
+    background-color: #1e1e1e;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    gap: 10vw;
+}
+
+.first-part-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 50px;
+}
+
+.site-map-links a {
+    text-decoration: none;
+    color: rgba(242, 242, 242, .5);
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.legal-links {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 15px;
+    width: fit-content;
+}
+
+.legal-links a:hover,
+.site-map-links a:hover {
+    color: rgba(242, 242, 242, 1);
+}
+
+.subscribe-to-newsletter {
+    color: #f2f2f2;
+    font-weight: 200;
+}
+
+.second-part-footer img {
+    wdith: 150px;
+}
+
+.second-part-footer a {
+    margin-top: 50px;
+}
+
+#to-top-btn {
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "Readex Pro", sans-serif;
+    cursor: pointer;
+}
+
+#to-top-btn:hover,
+.form-btn:hover,
+.see-more-work-btn:hover,
+.lets-work-btn:hover {
+    color: white;
+}
+
+#to-top-btn:active,
+#form-btn:active {
+    background-color: #f2f2f2;
