@@ -28,8 +28,8 @@ function addProject(imageUrl, projectTitle, description, projectUrl) {
 }
 
 addProject('front-end-development-images/project-1-img.png', 'E-commerce Website', 'HTML, CSS, JS', 'https://petricah.github.io/Foli-V2/');
-addProject('front-end-development-images/Project-2.png', 'Marketing Club Website', 'HTML, CSS, JS', 'https://petricah.github.io/clubuldemarketing/');
-addProject('front-end-development-images/Project-3.png', 'Education Platform Website', 'HTML, CSS, JS', 'https://petricah.github.io/EduVisionHub/');
-addProject('front-end-development-images/Project-4.png', 'Sweets Online Shop Website', 'HTML, CSS, JS', 'https://petricah.github.io/sweetWebsite/');
-addProject('front-end-development-images/Project-5.png', 'Landing Website Photovoltaic Business', 'HTML, CSS, JS', 'https://petricah.github.io/electric-website/');
+addProject('front-end-development-images/project-2-img.png', 'Marketing Club Website', 'HTML, CSS, JS', 'https://petricah.github.io/clubuldemarketing/');
+addProject('front-end-development-images/project-3-img.png', 'Education Platform Website', 'HTML, CSS, JS', 'https://petricah.github.io/EduVisionHub/');
+addProject('front-end-development-images/project-4-img.png', 'Sweets Online Shop Website', 'HTML, CSS, JS', 'https://petricah.github.io/sweetWebsite/');
+addProject('front-end-development-images/project-5-img.png', 'Landing Website Photovoltaic Business', 'HTML, CSS, JS', 'https://petricah.github.io/electric-website/');
 
