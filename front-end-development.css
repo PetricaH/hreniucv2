@@ -221,6 +221,7 @@ p {
 }
 
 .first-part-footer {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 15px;
