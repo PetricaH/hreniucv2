@@ -27,7 +27,7 @@ function addProject(imageUrl, projectTitle, description, projectUrl) {
     projectPanel.appendChild(projectContainer);
 }
 
-addProject('front-end-development-images/Project-1.png', 'E-commerce Website', 'HTML, CSS, JS', 'https://petricah.github.io/Foli-V2/');
+addProject('front-end-development-images/project-1-img.png', 'E-commerce Website', 'HTML, CSS, JS', 'https://petricah.github.io/Foli-V2/');
 addProject('front-end-development-images/Project-2.png', 'Marketing Club Website', 'HTML, CSS, JS', 'https://petricah.github.io/clubuldemarketing/');
 addProject('front-end-development-images/Project-3.png', 'Education Platform Website', 'HTML, CSS, JS', 'https://petricah.github.io/EduVisionHub/');
 addProject('front-end-development-images/Project-4.png', 'Sweets Online Shop Website', 'HTML, CSS, JS', 'https://petricah.github.io/sweetWebsite/');
