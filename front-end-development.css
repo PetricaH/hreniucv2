@@ -133,9 +133,11 @@ main {
     object-fit: cover; 
     position: relative;
     transition: .3s ease;
+    filter: grayscale(100%);
 }
 
 .project-container:hover img {
+    filter: grayscale(0%);
     transform: scale(1.05);
 }
 
@@ -164,7 +166,7 @@ main {
     z-index: 9;
 }
 
-p {
+.project-description-text {
     position: absolute;
     top: 50%;
     left: 5%;
@@ -205,10 +207,43 @@ p {
     background-color: #1e1e1e;
 }
 
-/*footer part*/
+/*footer section*/
 
-.footer-container {
+.form-input {
+    width: 350px;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgba(255, 0, 0, .5);
+    border-radius: 5px;
+    font-family: "Readex Pro", sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    transition: .2s ease-in-out;
+    background-color: transparent;
+    outline: none;
+}
+
+.form-input:focus {
+    border-bottom: 2px solid rgba(255, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.form-btn {
+    padding: 20px;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+    background-color: red;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+#footer-container {
     width: 100%;
+    margin-top: 100px;
     background-color: #1e1e1e;
     border-radius: 20px 20px 0 0;
     display: flex;
@@ -221,7 +256,6 @@ p {
 }
 
 .first-part-footer {
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -265,7 +299,8 @@ p {
     color: rgb(242, 242, 242, 1);
 }
 
-.subscribe-to-newsletter {
+.subscribe-to-newsletter p {
+    width: fit-content;
     color: #f2f2f2;
     font-weight: 200;
 }

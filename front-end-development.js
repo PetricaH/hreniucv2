@@ -16,20 +16,22 @@ function addProject(imageUrl, projectTitle, description, projectUrl) {
 
     const projectDescription = document.createElement('p');
     projectDescription.textContent = description;
+    projectDescription.classList.add('project-description-text')
     projectContainer.appendChild(projectDescription);
 
     const projectButton = document.createElement('a');
     projectButton.href = projectUrl;
     projectButton.textContent = 'View Project';
     projectButton.classList.add('button', 'view-project-btn');
+    projectButton.target = '_blank';
     projectContainer.appendChild(projectButton);
 
     projectPanel.appendChild(projectContainer);
 }
 
-addProject('front-end-development-images/project-1-img.png', 'E-commerce Website', 'HTML, CSS, JS', 'https://petricah.github.io/Foli-V2/');
-addProject('front-end-development-images/project-2-img.png', 'Marketing Club Website', 'HTML, CSS, JS', 'https://petricah.github.io/clubuldemarketing/');
-addProject('front-end-development-images/project-3-img.png', 'Education Platform Website', 'HTML, CSS, JS', 'https://petricah.github.io/EduVisionHub/');
-addProject('front-end-development-images/project-4-img.png', 'Sweets Online Shop Website', 'HTML, CSS, JS', 'https://petricah.github.io/sweetWebsite/');
-addProject('front-end-development-images/project-5-img.png', 'Landing Website Photovoltaic Business', 'HTML, CSS, JS', 'https://petricah.github.io/electric-website/');
+addProject('front-end-development-images/Project-1-image.png', 'E-commerce Website', 'HTML, CSS, JS', 'https://petricah.github.io/Foli-V2/');
+addProject('front-end-development-images/Project-2-image.png', 'Marketing Club Website', 'HTML, CSS, JS', 'https://petricah.github.io/clubuldemarketing/');
+addProject('front-end-development-images/Project-3-image.png', 'Education Platform Website', 'HTML, CSS, JS', 'https://petricah.github.io/EduVisionHub/');
+addProject('front-end-development-images/Project-4-image.png', 'Sweets Online Shop Website', 'HTML, CSS, JS', 'https://petricah.github.io/sweetWebsite/');
+addProject('front-end-development-images/Project-5-image.png', 'Landing Website Photovoltaic Business', 'HTML, CSS, JS', 'https://petricah.github.io/electric-website/');
 

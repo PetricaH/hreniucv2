@@ -452,6 +452,7 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-left: 50px;
+    position: relative;
 }
 
 .site-map-links {
