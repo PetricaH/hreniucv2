@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="digital-art.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <title>Digital Art | Hreniuc</title>
+</head>
+<body>
+
+    
+    <header id="top-of-website">
+        <a href="index.html"><img src="/images/logo.png" alt="Hreniuc Petrică Logo"></a>
+    </header>
+
+    <main>
+
+        <section id="hero-section">
+
+            <ul class="navigation-menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="front-end-development.html"><li>Front End Dev</li></a>
+                <a href="#"><li>Digital Marketing</li></a>
+                <a href="digital-art.html"><li>Digital Art</li></a>
+            </ul>
+
+    </section>
+
+        
+    <div class="gallery" id="gallery">
+    </div>
+
+    <div class="focused-image-container" id="focusedImageContainer">
+    <span class="close-button" id="closeButton">&times;</span>
+    <img class="focused-image" id="focusedImage" src="" alt="Focused Image">
+    </div>
+
+    <footer class="footer-container">
+        <div class="first-part-footer">
+            <div class="site-map-links">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="front-end-development.html" target="_blank">Front End Development</a>
+                <a href="digital-art.html" target="_blank">Digital Art</a>
+            </div>
+            <div class="legal-links">
+                <a href="#">Legal</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+            </div>
+            <div class="subscribe-to-newsletter">
+                <p>Do you want to be up to date with the latest<br>trends in any of
+                     the domains I’m active in?</p>
+                <p>Subscribe to my news letter.</p>
+                <form action="submit_newsletter_form.php" method="action" id="subscribe-to-news">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="your email..." required>
+                    <button type="submit" class="form-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="second-part-footer">
+            <img src="images/logo.png" alt="Hreniuc Logo">
+            <a href="#"><button id="to-top-btn">To Top</button></a>
+        </div>
+    </footer>
+
+    </main>
+    
+
+<script src="digital-art.js"></script>
+</body>
+</html>
