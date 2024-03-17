@@ -572,7 +572,7 @@ main {
     backdrop-filter: blur(15px);
     padding: 20px;
     z-index: 9999;
-    width: 90%;
+    width: 350px;
     border-radius: 20px;
   }
 

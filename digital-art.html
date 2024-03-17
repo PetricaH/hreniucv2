@@ -22,10 +22,9 @@
 
             <ul class="navigation-menu">
                 <a href="index.html"><li>Home</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="#" id="showFormBtn"><li>Contact</li></a>
                 <a href="front-end-development.html"><li>Front End Dev</li></a>
-                <a href="#"><li>Digital Marketing</li></a>
-                <a href="digital-art.html"><li>Digital Art</li></a>
+                <a href="digital-marketing.html"><li>Digital Marketing</li></a>
             </ul>
 
     </section>
@@ -69,8 +68,32 @@
     </footer>
 
     </main>
+
+    <div id="contactFormPopup">
+        <span class="close">&times;</span>
+        <form id="contactForm" action="submit_contact_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+          
+          <label for="category">Category:</label>
+          <select id="category" name="category">
+            <option value="digital_art">Digital Art</option>
+            <option value="digital_marketing">Digital Marketing</option>
+            <option value="front_end_development">Front End Development</option>
+          </select><br><br>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     
 
 <script src="digital-art.js"></script>
+<script src="popupForm.js"></script>
 </body>
 </html>

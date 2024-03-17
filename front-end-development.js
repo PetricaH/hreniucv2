@@ -34,4 +34,3 @@ addProject('front-end-development-images/Project-2-image.png', 'Marketing Club W
 addProject('front-end-development-images/Project-3-image.png', 'Education Platform Website', 'HTML, CSS, JS', 'https://petricah.github.io/EduVisionHub/');
 addProject('front-end-development-images/Project-4-image.png', 'Sweets Online Shop Website', 'HTML, CSS, JS', 'https://petricah.github.io/sweetWebsite/');
 addProject('front-end-development-images/Project-5-image.png', 'Landing Website Photovoltaic Business', 'HTML, CSS, JS', 'https://petricah.github.io/electric-website/');
-
