@@ -533,3 +533,110 @@ main {
 #form-btn:active {
     background-color: #f2f2f2;
 }
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.work-show-card:nth-child(1) {
+    transition-delay: 400ms;
+}
+
+.work-show-card:nth-child(2) {
+    transition-delay: 200ms;    
+}
+
+/*contact pop up*/
+#contactFormPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 30, 30, .8);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    z-index: 9999;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  #contactForm > input {
+    color: #1e1e1e;
+    font-family: 'Readex Pro', sans-serif;
+  }
+
+  #contactForm > input:focus,
+  #contactForm > textarea:focus {
+    border: none;
+    outline: none;
+  }
+  
+  #contactFormPopup input[type=text],
+  #contactFormPopup input[type=email],
+  #contactFormPopup textarea,
+  #contactFormPopup select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  
+  #contactFormPopup button[type=submit] {
+    background-color: red;
+    color: #1e1e1e;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Readex Pro', sans-serif;
+  }
+  
+  #contactFormPopup button[type=submit]:hover {
+    color: #f2f2f2;
+  }
+
+  label {
+    color: #f2f2f2;
+  }
+  
+  .close {
+    color: #f2f2f2;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #category {
+    color: #1e1e1e;
+    font-family: 'Readex Pro', sans-serif;
+  }
+
+  #category > option:hover {
+    cursor: pointer;
+  }
