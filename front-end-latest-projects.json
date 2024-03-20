@@ -1,14 +1,14 @@
 [
     {
         "title": "E-Commerce Website",
-        "image": "front-end-development-images/Project-1-image.jpg",
+        "image": "front-end-development-images/Project-1-image.png",
         "description": "HTML, CSS, JS",
         "link": "https://petricah.github.io/Foli-V2/"
     },
 
     {
         "title": "Marketing Club Website",
-        "image": "images/Project-2-image.jpg",
+        "image": "front-end-development-images/Project-2-image.png",
         "description": "HTML, CSS, JS",
         "link": "https://petricah.github.io/clubuldemarketing/"
     }
